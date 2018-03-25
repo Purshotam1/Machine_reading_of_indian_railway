@@ -201,9 +201,9 @@ for i in range(0,len(number)):
                 break
     #print(zone_list[i]) 
     #print("")
-    print(i+1)  
+    #print(i+1)  
 with open('zone_list.txt', 'wb') as fp:
     pickle.dump(zone_list, fp)
 
 
-print(itemlist[0]+","+zone_list[0])
+#print(itemlist[0]+","+zone_list[0])

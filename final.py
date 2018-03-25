@@ -7,8 +7,8 @@ with open ('department_list.txt', 'rb') as fp:
 c=0
 for i in range(0,len(zone)):
 	if zone[i]=="No zone found":
-		#print(zone[i])
+		print(zone[i])
 		c=c+1
-	#else:
-		#print(zone[i]+","+department[i])
+	else:
+		print(zone[i]+","+department[i])
 #print(c)
