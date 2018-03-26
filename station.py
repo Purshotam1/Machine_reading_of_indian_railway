@@ -144,10 +144,13 @@ import types
 for i in range(0,len(number)):
     print(i+1)
     if len(number[i])==0:
+        #print(itemlist[i])
         #print(zone_list[i]) 
         #print(i+1) 
         continue
     if zone_list[i]!="No zone found":
+        #print(itemlist[i])
+        
         #print(zone_list[i]) 
         #print(i+1) 
         continue
@@ -155,6 +158,8 @@ for i in range(0,len(number)):
         z=data_3[number[i]]
         if z in data_2:
             zone_list[i]=ndict[data_2[z]]
+            #print(itemlist[i])
+        
             #print(zone_list[i])
             #print(i+1)
             continue
@@ -190,7 +195,7 @@ for i in range(0,len(number)):
             z=re.findall('\(([^)]+)', line)
             for word in z:
                 #print((ndict[data[word]]))
-                print(word)
+                #print(word)
                 if word in data_2 and data_2[word] in ndict:
                     zone_list[i]=(ndict[data_2[word]])
                     flag=1
@@ -199,6 +204,8 @@ for i in range(0,len(number)):
 
             if flag==1:
                 break
+    #print(itemlist[i])
+        
     #print(zone_list[i]) 
     #print("")
     #print(i+1)  
